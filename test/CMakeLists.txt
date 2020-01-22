@@ -4,6 +4,7 @@ find_package(AVcodec REQUIRED)
 find_package(AVformat REQUIRED)
 find_package(AVutil REQUIRED)
 find_package(AVdevice REQUIRED)
+find_package(AVfilter REQUIRED)
 
 add_executable(linkTesting
 	"test.c"
@@ -15,4 +16,5 @@ target_link_libraries(linkTesting
 	AVformat::AVformat
 	AVutil::AVutil
 	AVdevice::AVdevice
+	AVfilter::AVfilter
 )
